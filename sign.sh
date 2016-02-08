@@ -1,20 +1,28 @@
 #!/bin/bash -eu
 
+# Copyright (C) Mats G. Liljegren <mats@mexit.se>
+# SPDX-License-Identifier: BSD-2-Clause
 
 #################################
 # Configurations
 
 
-# Change this to your own policy!
-readonly policyUrl="http://mats.mexit.se/files/gpg-signature-policy.md"
-readonly signingKeyId=CB9C8689AEA6A954
+# Change this!
+#readonly policyUrl="http://mats.mexit.se/files/gpg-signature-policy.md"
+#readonly signingKeyId=CB9C8689AEA6A954
 
 # Be verbose, 0 = false, 1 = true
 readonly verbose=0
 
-
 #################################
 # End of configurations
+
+# Sign all keys found as files with .gpg as extension in the current working
+# directory. All signed key files are written to "out" sub-directory to
+# current working directory.
+#
+# Syntax:
+#   sign.sh
 
 # Determine gpg verbose parameter
 case $verbose in
