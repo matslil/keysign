@@ -1,0 +1,21 @@
+Hi,
+
+please find attached the user id of your key signed by me.
+
+If you have multiple user ids, I sent the signature for each user id
+separately to that user id's associated email address. You can import
+the signatures by running each through `gpg --import`.
+
+Note that I did not upload your key to any keyservers. If you want this
+new signature to be available to others, please upload it yourself.
+With GnuPG this can be done using
+       gpg --keyserver pool.sks-keyservers.net --send-key ${keyId}
+
+If you have any questions, don't hesitate to ask.
+
+Best regards,
+${signerName}
+
+This mail was created by send-email.sh, part of keysign tools at
+https://github.com/matslil/keysign
+
