@@ -1,6 +1,8 @@
 Hi,
 
-please find attached the user id of your key signed by me.
+please find attached the user id
+        ${signeeUid}
+of your key ${keyId} signed by me.
 
 If you have multiple user ids, I sent the signature for each user id
 separately to that user id's associated email address. You can import
