@@ -1,0 +1,24 @@
+# Signer's name
+signerName="Firstname Lastname"
+
+# Signer's e-mail, most likely the same as smtpFrom
+signerEmail="user@mail.address"
+
+# Signer's key, files to send are expected to end with this
+signerFullKeyId="CAFEBABECAFEBABE"
+
+# SMTP server, GMAIL example:
+smtpServer=smtp.gmail.com:587
+
+# Mail address to send mails from
+smtpFrom=user@mail.address
+
+# Use TLS: auto, yes or no
+smtpTls=yes
+
+# SMTP server login username
+smtpUser="Username"
+
+# SMTP server login password
+smtpPasswd="secretword"
+
