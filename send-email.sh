@@ -3,6 +3,24 @@
 # Copyright (C) Mats G. Liljegren <mats@mexit.se>
 # SPDX-License-Identifier: BSD-2-Clause
 
+# Iterate all files created by sign.sh, and send them to the respective
+# user ID.
+#
+# To use this script, first create the following file:
+#     ~/gpg-signing/smtp-passwd.cfg
+# Use file smtp-passwd.cfg.example as a starting point.
+#
+# If you want to do a dry test run, change the value for variable "dryRun"
+# to "1".
+#
+# Make sure your current working directory is where the files are, and
+# invoke this script without any parameters.
+#
+# Prerequisites:
+# - gpg2 (you can probably change to gpg if you prefer that)
+# - mime-construct
+# - sendemail 
+
 dryRun=0
 
 # Read configuration file
