@@ -26,6 +26,3 @@ with your configurations, and will therefore not work out of the box.
 Do this before you run dl-key.sh, since dl-key.sh will copy sign.sh to
 its output directory.
 
-If you cannot find send-email.sh script then it is because I haven't written
-it yet.
-
